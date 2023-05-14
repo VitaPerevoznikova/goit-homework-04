@@ -150,7 +150,7 @@ rgba(46, 47, 66, 0.08);}
   padding: 188px 0;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-  url(../images/hero/people-office\ 1.jpg);
+  url(../images/hero/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1440px;
@@ -251,6 +251,7 @@ rgba(46, 47, 66, 0.08);}
   background-color: #ffffff;
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding-left: 15px;
 }
 /* Custumers */
 .customers {
