@@ -297,10 +297,11 @@ fill: currentColor;
   border-radius: 50%;
   background-color: var(--iris);
 }
-.social-list-link :hover 
-.social-list-link :focus  {
-background-color: #404bbf;
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #404bbf;
 }
+
 .social-list-icon {
   fill: var(--cloud);
   }
