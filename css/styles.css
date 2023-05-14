@@ -149,14 +149,12 @@ rgba(46, 47, 66, 0.08);}
 .hero {
   padding: 188px 0;
   background-color: #2e2f42;
-  background-image: 
-  linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(../images/hero/people-office\ 1.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+  url(../images/hero/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1440px;
+  background-size: cover;
 }
 .hero-tex {
   font-weight: 700;
@@ -299,8 +297,8 @@ fill: currentColor;
   border-radius: 50%;
   background-color: var(--iris);
 }
-.social-list-link:hover 
-.social-list-link:focus {
+.social-list-link :hover 
+.social-list-link :focus  {
 background-color: #404bbf;
 }
 .social-list-icon {
@@ -327,7 +325,7 @@ background-color: #404bbf;
 .second-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -400,7 +398,7 @@ margin-bottom: 48px;
 /* footer */
 .footer-container{
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer {
   background: #2e2f42;
