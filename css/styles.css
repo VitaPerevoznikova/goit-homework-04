@@ -98,8 +98,14 @@ body {
   align-items: center;
 }
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
-}
+  border-bottom: 1px solid #e7e9fc;}
+
+.page-header:hover,
+.page-header:focus{
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px 
+rgba(46, 47, 66, 0.16), 0px 1px 6px
+rgba(46, 47, 66, 0.08);}
+
 .page-nav {
   display: flex;
   align-items: center;
@@ -146,10 +152,10 @@ body {
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(../images/hero/people-office\ 1.jpg);
   background-size: cover;
+  max-width: 1440px;
 }
 .hero-tex {
   font-weight: 700;
@@ -194,11 +200,15 @@ body {
 .soft-skills-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+/* Feature */
 .feature {
   display: flex;
   gap: 24px;
 }
 .feature-item {
+  width: calc((100% - 72px) / 4);
+}
+.feature-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,10 +216,8 @@ body {
   background-color: var(--cloud);
   width: 264px;
   height: 112px;
-  width: calc((100% - 72px) / 4);
 }
 /* Section 3 */
-
 .our-works {
   display: flex;
   gap: 24px;
@@ -231,13 +239,17 @@ body {
 .our-team-card {
   background-color: #ffffff;
   text-align: center;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
   width: calc((100% - 72px) / 4);
 }
-
+.our-team-card:focus,
+.our-team-card:hover {
+  box-shadow: 0px 1px 6px 
+  rgba(46, 47, 66, 0.08), 0px 1px 1px 
+  rgba(46, 47, 66, 0.16), 0px 2px 1px
+  rgba(46, 47, 66, 0.08);
+}
 .our-team-text {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -252,6 +264,9 @@ body {
   display: flex;
   gap: 24px;
 }
+.customers-grup{
+  width: calc((100% - 120px) / 6);
+}
 .link-customers{
   display: flex;
   align-items: center;
@@ -261,22 +276,20 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.link-customers:focus,
-.link-customers:hover {
-  color: #404bbf;
+.link-customers:hover,
+.link-customers:focus {
+  border-color: var(--ocean);
+}
+.link-customers:hover .customers-logo-grup,
+.link-customers:focus .customers-logo-grup {
+ fill: var(--ocean);
 }
 .customers-logo-grup{
   fill: #8E8F99 ;
 }
-.link-customers:hover .customers-logo-grup,
-.link-customers:focus .customers-logo-grup{
-  fill: var(--ocean);
-}
-
 /* Sections  */
 .social-list {
   display: flex;
-  /* justify-content: center; */
   column-gap: 24px;
 }
 .social-list-link {
@@ -288,9 +301,9 @@ body {
   border-radius: 50%;
   background-color: var(--iris);
 }
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--cloud);
+.social-list-link:hover 
+.social-list-link:focus {
+  background-color: var(--ocean);
 }
 .social-list-icon {
   fill: var(--cloud);
@@ -357,15 +370,21 @@ body {
   border-radius: 4px;
   padding: 12px 24px 12px 24px;
 }
+.filter-group-list:hover,
+.filter-group-list:focus{
+  box-shadow: 0px 3px 1px 
+  rgba(0, 0, 0, 0.1), 0px 2px 1px 
+  rgba(0, 0, 0, 0.08), 0px 2px 2px 
+  rgba(0, 0, 0, 0.12);
+}
 
 .portfolio-button:focus,
 .portfolio-button:hover {
   color: #ffffff;
   background-color: #404bbf;
   border: var(--border);
-  border: 1px solid transparent;
+  border: 1px solid rgba(231, 233, 252, 1);
 }
-
 .project-card {
   display: flex;
   flex-wrap: wrap;
@@ -375,7 +394,9 @@ body {
 .project-card-item {
   width: calc((100% - 48px) / 3);
 }
-
+.project-card-link{
+border-color: 1px solid rgba(231, 233, 252, 1);
+}
 /* .project-card-item:not(:nth-child(3n)){
   margin-right: 24px;
 }
@@ -386,7 +407,7 @@ margin-bottom: 48px;
 /* footer */
 .footer-container{
 display: flex;
-justify-content: space-between;
+align-items: baseline;
 }
 .footer {
   background: #2e2f42;
@@ -419,7 +440,7 @@ justify-content: space-between;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.footer-list{
- align-items: center;
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: #31D0AA ;
 }
-
