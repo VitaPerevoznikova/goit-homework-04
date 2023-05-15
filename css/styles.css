@@ -393,7 +393,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   background-color: #ffffff;
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding: 32px 0px;
+  padding: 32px 16px;
 }
 
 /* .project-card-item:not(:nth-child(3n)){
@@ -410,7 +410,6 @@ margin-bottom: 48px;
   color: var(--naviblue);
   text-transform: capitalize;
   margin-bottom: 8px;
-  padding-left: 16px;
 }
 .section-description-portfolio {
   font-weight: 400;
@@ -418,7 +417,6 @@ margin-bottom: 48px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  padding-left: 16px;
 }
 /* footer */
 .footer{
