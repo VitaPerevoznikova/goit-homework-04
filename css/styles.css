@@ -201,6 +201,22 @@ rgba(46, 47, 66, 0.08);}
 .soft-skills-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+.suptitle-soft-skills{
+ font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--naviblue);
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.section-description-soft-skills {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
 /* Feature */
 .feature {
   display: flex;
@@ -217,6 +233,7 @@ rgba(46, 47, 66, 0.08);}
   background-color: var(--cloud);
   width: 264px;
   height: 112px;
+  margin-bottom: 8px;
 }
 /* Section 3 */
 .our-works {
